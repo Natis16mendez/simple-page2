@@ -1,0 +1,46 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+html{
+background-color: rgb(255, 255, 255);
+
+}
+
+.contenedor-menu {
+    height: 200px;
+    width: 80%;
+    background-color: rgb(169, 114, 221);
+    margin: 0 auto;
+
+}
+
+.contenedor-menu h1{
+    color: rgb(64, 240, 181);
+    text-align: center;
+    text-shadow: 6px 6px 6px rgb(166, 166, 196);
+    line-height: 60px;
+
+}
+
+.contenedor-menu ul {
+display: flex;
+}
+
+
+.contenedor-menu ul li{
+    list-style-type: none;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+.contenedor-menu ul li a{
+    text-decoration: none;
+}
+
+.contenedor-menu ul li a:hover{
+    font-size: 28px;
+    color: aqua;
+    background-color: blueviolet;
+}

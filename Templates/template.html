@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{url_for('static',
+    filename='/css/cabecera-styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',
+    filename='/css/pie-pagina-styles.css')}}">
+      <title>{% block title %} Template {% endblock %}</title>
+</head>
+<body>
+    <header></header>
+    <div class="contenedor-menu">
+        <h1>firts flask frontend</h1>
+        <ul>
+            <li>
+                <a href="{{url_for('home')}}">inicio</a>
+                </li>
+                <li>
+
+                <a href="{{url_for('home')}}">productos</a>
+            </li>
+            <li>
+                <a href="{{url_for('home')}}">servicios</a>  
+            </li>
+            <li>
+                <a href="{{url_for('home')}}">contactenos</a>  
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer>
+        <h1>&COPY;Natis16mendez</h1>
+    </footer>
+</body>
+</html>
